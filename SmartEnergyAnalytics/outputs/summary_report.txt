@@ -1,0 +1,36 @@
+SMART ENERGY ANALYTICS DASHBOARD - RUN SUMMARY
+Generated : 2026-10-07 23:07:12
+
+1. BASELINE DAY
+   Readings           : 24 hourly
+   Consumption        : 326.2 kWh
+   Cost               : Rs.3,095.86
+   CO2                : 267.5 kg
+   Peak hour          : 14:00 at 26.0 kWh
+   Load factor        : 0.52
+
+2. FORECAST MODEL
+   MAE / RMSE         : 0.384 / 0.489 kWh
+   MAPE               : 4.91 %
+   R-squared          : 0.997
+   Residual sigma     : 0.497 kWh
+
+   Coefficients (per 1 standard deviation of the input):
+     occupancy             6.015
+     hour_cos             -2.281
+     hour_sin             -1.288
+     is_working_hour       0.644
+     temperature_c        -0.169
+
+3. REAL-TIME STREAM
+   Readings processed : 12
+   Energy             : 150.2 kWh
+   Cost               : Rs.1,758.11 (Rs.11.71/kWh)
+   Demand penalty     : Rs.306.00
+   CO2                : 123.2 kg
+   Peak               : 31.8 kWh at 11:00
+   Alerts / watches   : 3 / 0
+   Avoidable waste    : 16.0 kWh (about Rs.187.13)
+
+Artefacts in outputs/: charts (*.png), load_forecast_model.joblib,
+realtime_alerts.csv, summary_report.txt
